@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>音乐</title>
+    <link rel="icon" href="<%= BASE_URL %>favicon.ico">
+</head>
+<style>
+    *{
+        margin: 0;
+        padding: 0;
+        list-style: none;
+    }
+    body{
+        display: flex;
+    }
+    video,canvas{
+        border: 1px solid #ccc;
+        width: 500px;
+        height: 280px;
+    }
+    #cvs{
+      display: none;
+    }
+
+</style>
+<body>
+    <noscript>
+        <strong>We're sorry but <%= htmlWebpackPlugin.options.title %> doesn't work properly without JavaScript enabled. Please enable it to continue.</strong>
+      </noscript>
+      <div id="app"></div>
+</body>
+</html>
